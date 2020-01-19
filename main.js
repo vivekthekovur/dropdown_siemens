@@ -31,7 +31,7 @@ const getQueryParams = (params, url) => {
 
 let dataString = getQueryParams('data', window.location);
 let str = decodeURIComponent(dataString)
-str = str.slice(1, length - 1)
+//str = str.slice(1, length - 1)
 let data = JSON.parse(str)
 key.innerHTML = Object.keys(data)[0];
 const values = Object.values(data)[0];
